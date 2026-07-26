@@ -147,27 +147,61 @@
             <h1>Tampermonkey <span class="highlight">Script</span></h1>
             <p>Install the browser script to preserve HQ uploads on TikTok</p>
         </div>
+
         <div class="features" style="max-width:700px;margin:0 auto">
             <div class="feature-card">
                 <div style="flex:1">
                     <h3>What this does</h3>
-                    <p style="font-size:14px">Runs on tiktok.com/tiktokstudio/upload and strips TikTok's re-encode flags.</p>
+                    <p style="font-size:14px;color:#9ca3af;line-height:1.6">This Tampermonkey script runs on <span style="color:#a78bfa;font-weight:600">tiktok.com/tiktokstudio/upload</span> and automatically strips TikTok's re-encode flags, ensuring your patched video stays in its original quality after upload.</p>
+                    <p style="font-size:14px;color:#9ca3af;line-height:1.6;margin-top:12px">If your upload includes a song tag, this script is highly recommended to preserve quality. However, if you do not include a song tag, your video is safe to upload without Tampermonkey.</p>
                 </div>
             </div>
             <div class="feature-card">
                 <div style="flex:1">
                     <h3>Installation</h3>
-                    <ol style="font-size:13px;color:#9ca3af;padding-left:20px;line-height:1.8">
-                        <li>Install <a href="https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo" target="_blank" style="color:#a78bfa">Tampermonkey</a> (Chrome) or <a href="https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/" target="_blank" style="color:#a78bfa">Tampermonkey</a> (Firefox).</li>
-                        <li>Click "Install Script" below &rarr; click <strong>Install</strong>.</li>
-                        <li>Go to tiktok.com/tiktokstudio/upload and upload.</li>
+                    <ol style="font-size:14px;color:#9ca3af;padding-left:20px;line-height:1.8">
+                        <li>Install <a href="https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo" target="_blank" style="color:#a78bfa;text-decoration:underline">Tampermonkey</a> (Chrome) or <a href="https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/" target="_blank" style="color:#a78bfa;text-decoration:underline">Tampermonkey</a> (Firefox).</li>
+                        <li>Click one of the "Install Script" buttons below.</li>
+                        <li>Tampermonkey will open an install tab. Click <strong style="color:#e5e7eb">Install</strong>.</li>
+                        <li>Go to <span style="color:#a78bfa;font-weight:600">tiktok.com/tiktokstudio/upload</span> and upload your patched video.</li>
                     </ol>
+                    <div style="margin-top:16px;padding:14px;border-radius:8px;font-size:13px;background:rgba(245,158,11,0.06);border:1px solid rgba(245,158,11,0.3)">
+                        <p style="color:#fbbf24;font-weight:600">&#9888;&#65039; Important</p>
+                        <p style="color:#e5e7eb;margin-top:4px">Please enable the <strong style="color:#e5e7eb">Allow User Scripts</strong> extension setting. <a href="https://www.tampermonkey.net/faq.php#Q01" target="_blank" style="color:#a78bfa;text-decoration:underline">Click here for more info how to do this.</a></p>
+                    </div>
                 </div>
             </div>
         </div>
+
         <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin:30px 0">
             <a href="static/deepseek.user.js" style="display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#a78bfa,#8b5cf6);color:white;text-decoration:none;padding:14px 28px;border-radius:12px;font-weight:600;font-size:14px;transition:all .3s;box-shadow:0 4px 20px rgba(167,139,250,0.4)">Install Script</a>
             <a href="static/deepseek-obfuscated.user.js" style="display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#a78bfa,#8b5cf6);color:white;text-decoration:none;padding:14px 28px;border-radius:12px;font-weight:600;font-size:14px;transition:all .3s;box-shadow:0 4px 20px rgba(167,139,250,0.4)">Install Script (Obfuscated)</a>
+        </div>
+
+        <div class="features" style="max-width:700px;margin:20px auto 0">
+            <div class="feature-card">
+                <div style="flex:1">
+                    <h3>Workflow Summary</h3>
+                    <div style="margin-top:12px">
+                        <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:12px">
+                            <span style="background:rgba(167,139,250,0.2);color:#a78bfa;border-radius:50%;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0">1</span>
+                            <p style="font-size:14px;color:#e5e7eb">Install the Tampermonkey script using one of the buttons above.</p>
+                        </div>
+                        <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:12px">
+                            <span style="background:rgba(167,139,250,0.2);color:#a78bfa;border-radius:50%;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0">2</span>
+                            <p style="font-size:14px;color:#e5e7eb">Patch your video here on VideoPatcher &mdash; download the <span style="color:#a78bfa;font-weight:600">_tiktok.mp4</span> file.</p>
+                        </div>
+                        <div style="display:flex;align-items:flex-start;gap:12px;margin-bottom:12px">
+                            <span style="background:rgba(167,139,250,0.2);color:#a78bfa;border-radius:50%;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0">3</span>
+                            <p style="font-size:14px;color:#e5e7eb">Go to <span style="color:#a78bfa;font-weight:600">tiktok.com/tiktokstudio/upload</span> on your desktop browser.</p>
+                        </div>
+                        <div style="display:flex;align-items:flex-start;gap:12px">
+                            <span style="background:rgba(167,139,250,0.2);color:#a78bfa;border-radius:50%;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;flex-shrink:0">4</span>
+                            <p style="font-size:14px;color:#e5e7eb">Upload the patched video. The script automatically prevents TikTok from re-encoding your video.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
