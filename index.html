@@ -303,6 +303,17 @@ const MAX_SIZE = 100*1024*1024;
 
 function $(id) { return document.getElementById(id); }
 
+document.addEventListener('click', function(e) {
+    const l = e.target.closest('.nav-link');
+    if (!l) return;
+    e.preventDefault();
+    const page = l.dataset.page;
+    if (page === 'dashboard' && currentUser) renderDashboard();
+    else if (page === 'login' && currentUser) return;
+    else if (page === 'register' && currentUser) return;
+    switchPage(page);
+});
+
 function switchPage(page) {
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
     const el = document.getElementById('page-'+page);
@@ -335,15 +346,6 @@ function setNav() {
         html += '<a href="#" class="nav-link" data-page="register" style="background:linear-gradient(135deg,#a78bfa,#8b5cf6);color:white;padding:8px 16px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;box-shadow:0 4px 20px rgba(167,139,250,0.4)">Register</a>';
     }
     nav.innerHTML = html;
-    document.querySelectorAll('#navBar .nav-link').forEach(l => {
-        l.addEventListener('click', function(e) {
-            e.preventDefault();
-            if (this.dataset.page === 'dashboard' && currentUser) renderDashboard();
-            else if (this.dataset.page === 'login' && currentUser) return;
-            else if (this.dataset.page === 'register' && currentUser) return;
-            switchPage(this.dataset.page);
-        });
-    });
     const lo = document.getElementById('logoutBtnNav');
     if (lo) lo.addEventListener('click', () => { auth.signOut(); switchPage('home'); });
     document.getElementById('logoutBtn')?.addEventListener('click', () => { auth.signOut(); switchPage('home'); });
