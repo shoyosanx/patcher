@@ -327,10 +327,9 @@ document.getElementById('switchToLogin')?.addEventListener('click', e => { e.pre
 function renderHome() {
     const c = document.getElementById('homeContent');
     if (currentUser && userData) {
-        c.innerHTML = '<div class="hero"><h1>Beat TikTok\'s <span class="highlight">Compression</span><br>Without Quality Loss</h1><p>Enhance your video metadata to maintain high framerates and resolutions.</p><p>Works on desktop browsers. Client-side processing, your video never leaves your device.</p></div>' +
-            '<div class="features">' +
-            '<div class="feature-card"><div style="flex:1"><h3>1080p is the sweet spot</h3><p style="font-size:14px;color:#9ca3af">Patch videos in <span style="color:#a78bfa;font-weight:600">1080p (60fps or 120fps)</span> with optimized metadata.</p></div></div>' +
-            '<div class="feature-card"><div style="flex:1"><h3>100% Free Forever</h3><p style="font-size:14px;color:#9ca3af">This tool will always be <span style="color:#a78bfa;font-weight:600">completely free</span>. Client-side processing means no server costs!</p></div></div>' +
+        c.innerHTML = '<div class="features">' +
+            '<div class="feature-card"><div style="flex:1"><h3>Desktop Web Browser</h3><p style="font-size:14px;color:#9ca3af">Upload via Google Chrome, Firefox, or Edge on your computer.</p></div></div>' +
+            '<div class="feature-card"><div style="flex:1"><h3>Mobile App</h3><p style="font-size:14px;color:#9ca3af">Upload directly from the TikTok app or TikTok Studio app on your phone.</p></div></div>' +
             '</div>' +
             '<div class="upload-section">' +
             '<div class="upload-header"><h2>&#9729; Upload Your Video</h2><p>Get your patched file in seconds</p></div>' +
@@ -345,9 +344,8 @@ function renderHome() {
             '<div class="status" id="status"></div></div>';
         bindUpload();
     } else {
-        c.innerHTML = '<div class="hero"><h1>Beat TikTok\'s <span class="highlight">Compression</span><br>Without Quality Loss</h1><p>Enhance your video\'s metadata to maintain high framerates and resolutions.</p><p>Works on desktop browsers. Client-side processing, your video never leaves your device.</p></div>' +
-            '<div class="features"><div class="feature-card"><div style="flex:1"><h3>1080p is the sweet spot</h3><p style="font-size:14px;color:#9ca3af">Patch videos in <span style="color:#a78bfa;font-weight:600">1080p (60fps or 120fps)</span> with optimized metadata.</p></div></div>' +
-            '<div class="feature-card"><div style="flex:1"><h3>100% Free Forever</h3><p style="font-size:14px;color:#9ca3af">This tool will always be <span style="color:#a78bfa;font-weight:600">completely free</span>. Client-side processing means no server costs!</p></div></div></div>' +
+        c.innerHTML = '<div class="features"><div class="feature-card"><div style="flex:1"><h3>Desktop Web Browser</h3><p style="font-size:14px;color:#9ca3af">Upload via Google Chrome, Firefox, or Edge on your computer.</p></div></div>' +
+            '<div class="feature-card"><div style="flex:1"><h3>Mobile App</h3><p style="font-size:14px;color:#9ca3af">Upload directly from the TikTok app or TikTok Studio app on your phone.</p></div></div></div>' +
             '<div style="text-align:center;padding:40px"><h2 style="font-size:28px;margin-bottom:12px">Login to get started</h2><p style="color:#9ca3af;margin-bottom:24px">Create an account to start patching videos and bypass TikTok compression.</p>' +
             '<div style="display:flex;gap:12px;justify-content:center"><a href="#" class="patch-btn" id="goRegister" style="display:inline-block;width:auto;padding:12px 24px;text-transform:none;font-size:14px;text-decoration:none">Register Free</a>' +
             '<a href="#" id="goLogin" style="display:inline-block;border:1px solid rgba(167,139,250,0.3);color:#a78bfa;padding:12px 24px;border-radius:12px;font-size:14px;font-weight:600;text-decoration:none">Login</a></div></div>';
@@ -551,5 +549,23 @@ setNav();
 renderHome();
 renderPricing();
 </script>
+
+<div style="border-top:1px solid rgba(167,139,250,0.2);background:rgba(10,14,26,0.6);padding:40px 0;margin-top:60px">
+    <div style="max-width:1200px;margin:0 auto;padding:0 40px;display:flex;flex-direction:column;gap:12px">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px">
+            <div style="display:flex;align-items:center;gap:12px">
+                <span style="font-size:18px;font-weight:700;background:linear-gradient(135deg,#fff,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">VideoPatcher</span>
+                <span style="font-size:14px;color:#6b7280">Patch videos. Keep your quality.</span>
+            </div>
+            <nav style="display:flex;flex-wrap:wrap;gap:16px;font-size:14px">
+                <a href="#" class="nav-link" data-page="pricing" style="color:#6b7280;text-decoration:none;transition:color .2s">Pricing</a>
+                <a href="#" class="nav-link" data-page="guide" style="color:#6b7280;text-decoration:none;transition:color .2s">How To</a>
+            </nav>
+        </div>
+        <div style="border-top:1px solid rgba(167,139,250,0.1);padding-top:12px">
+            <p style="font-size:12px;color:#6b7280">&copy; 2026 VideoPatcher. Independent project.</p>
+        </div>
+    </div>
+</div>
 </body>
 </html>
