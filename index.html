@@ -90,17 +90,17 @@
     <!-- ===== PAGE: LOGIN ===== -->
     <div class="page" id="page-login">
         <div class="hero" style="margin-bottom:0">
-            <div style="max-width:400px;margin:0 auto;text-align:left">
-                <h2 style="font-size:28px;font-weight:700;margin-bottom:8px">Welcome Back</h2>
-                <p style="color:#9ca3af;margin-bottom:24px">Login to your account</p>
+            <div style="background:rgba(30,30,42,0.5);backdrop-filter:blur(12px);border:1px solid rgba(167,139,250,0.1);border-radius:16px;padding:40px;max-width:420px;margin:0 auto;text-align:left">
+                <h2 style="font-size:28px;font-weight:700;margin-bottom:4px;background:linear-gradient(135deg,#fff,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Login</h2>
+                <p style="color:#6b7280;margin-bottom:24px;font-size:14px">Welcome back</p>
                 <form id="loginForm">
-                    <p style="margin-bottom:6px;font-size:14px;color:#9ca3af">Email</p>
-                    <input type="email" id="loginEmail" style="width:100%;background:rgba(30,41,59,0.6);border:1px solid rgba(167,139,250,0.3);border-radius:8px;padding:12px 16px;font-size:14px;color:#e5e7eb;outline:none;margin-bottom:16px" placeholder="your@email.com" required>
-                    <p style="margin-bottom:6px;font-size:14px;color:#9ca3af">Password</p>
-                    <input type="password" id="loginPassword" style="width:100%;background:rgba(30,41,59,0.6);border:1px solid rgba(167,139,250,0.3);border-radius:8px;padding:12px 16px;font-size:14px;color:#e5e7eb;outline:none;margin-bottom:20px" placeholder="Min 6 characters" required>
+                    <p style="margin-bottom:6px;font-size:14px;color:#6b7280;font-weight:500">Email</p>
+                    <input type="email" id="loginEmail" style="width:100%;background:rgba(30,41,59,0.6);border:1px solid rgba(167,139,250,0.3);border-radius:8px;padding:12px 16px;font-size:14px;color:#e5e7eb;outline:none;margin-bottom:16px" placeholder="your@email.com" autofocus required>
+                    <p style="margin-bottom:6px;font-size:14px;color:#6b7280;font-weight:500">Password</p>
+                    <input type="password" id="loginPassword" style="width:100%;background:rgba(30,41,59,0.6);border:1px solid rgba(167,139,250,0.3);border-radius:8px;padding:12px 16px;font-size:14px;color:#e5e7eb;outline:none;margin-bottom:16px" placeholder="Min 6 characters" required>
                     <p id="loginError" class="status error" style="margin-top:0;margin-bottom:12px;font-size:13px"></p>
                     <button type="submit" class="patch-btn" style="padding:14px;font-size:14px;text-transform:none">Login</button>
-                    <p style="font-size:13px;color:#6b7280;text-align:center;margin-top:16px">No account? <a href="#" style="color:#a78bfa;text-decoration:underline" id="switchToRegister">Register here</a></p>
+                    <p style="font-size:13px;color:#6b7280;text-align:center;margin-top:16px">No account? <a href="#" style="color:#a78bfa;text-decoration:underline" id="switchToRegister">Register now</a></p>
                 </form>
             </div>
         </div>
@@ -109,19 +109,19 @@
     <!-- ===== PAGE: REGISTER ===== -->
     <div class="page" id="page-register">
         <div class="hero" style="margin-bottom:0">
-            <div style="max-width:400px;margin:0 auto;text-align:left">
-                <h2 style="font-size:28px;font-weight:700;margin-bottom:8px">Create Account</h2>
-                <p style="color:#9ca3af;margin-bottom:24px">Start patching videos</p>
+            <div style="background:rgba(30,30,42,0.5);backdrop-filter:blur(12px);border:1px solid rgba(167,139,250,0.1);border-radius:16px;padding:40px;max-width:420px;margin:0 auto;text-align:left">
+                <h2 style="font-size:28px;font-weight:700;margin-bottom:4px;background:linear-gradient(135deg,#fff,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Create Account</h2>
+                <p style="color:#6b7280;margin-bottom:24px;font-size:14px">Start patching videos</p>
                 <form id="registerForm">
-                    <p style="margin-bottom:6px;font-size:14px;color:#9ca3af">Username</p>
-                    <input type="text" id="regUsername" style="width:100%;background:rgba(30,41,59,0.6);border:1px solid rgba(167,139,250,0.3);border-radius:8px;padding:12px 16px;font-size:14px;color:#e5e7eb;outline:none;margin-bottom:16px" placeholder="username" required>
-                    <p style="margin-bottom:6px;font-size:14px;color:#9ca3af">Email</p>
+                    <p style="margin-bottom:6px;font-size:14px;color:#6b7280;font-weight:500">Username</p>
+                    <input type="text" id="regUsername" style="width:100%;background:rgba(30,41,59,0.6);border:1px solid rgba(167,139,250,0.3);border-radius:8px;padding:12px 16px;font-size:14px;color:#e5e7eb;outline:none;margin-bottom:16px" placeholder="username" autofocus required>
+                    <p style="margin-bottom:6px;font-size:14px;color:#6b7280;font-weight:500">Email</p>
                     <input type="email" id="regEmail" style="width:100%;background:rgba(30,41,59,0.6);border:1px solid rgba(167,139,250,0.3);border-radius:8px;padding:12px 16px;font-size:14px;color:#e5e7eb;outline:none;margin-bottom:16px" placeholder="your@email.com" required>
-                    <p style="margin-bottom:6px;font-size:14px;color:#9ca3af">Password</p>
-                    <input type="password" id="regPassword" style="width:100%;background:rgba(30,41,59,0.6);border:1px solid rgba(167,139,250,0.3);border-radius:8px;padding:12px 16px;font-size:14px;color:#e5e7eb;outline:none;margin-bottom:20px" placeholder="Min 6 characters" required>
+                    <p style="margin-bottom:6px;font-size:14px;color:#6b7280;font-weight:500">Password</p>
+                    <input type="password" id="regPassword" style="width:100%;background:rgba(30,41,59,0.6);border:1px solid rgba(167,139,250,0.3);border-radius:8px;padding:12px 16px;font-size:14px;color:#e5e7eb;outline:none;margin-bottom:16px" placeholder="Min 6 characters" required>
                     <p id="registerError" class="status error" style="margin-top:0;margin-bottom:12px;font-size:13px"></p>
                     <button type="submit" class="patch-btn" style="padding:14px;font-size:14px;text-transform:none">Register</button>
-                    <p style="font-size:13px;color:#6b7280;text-align:center;margin-top:16px">Already have an account? <a href="#" style="color:#a78bfa;text-decoration:underline" id="switchToLogin">Login here</a></p>
+                    <p style="font-size:13px;color:#6b7280;text-align:center;margin-top:16px">Already have an account? <a href="#" style="color:#a78bfa;text-decoration:underline" id="switchToLogin">Login</a></p>
                 </form>
             </div>
         </div>
@@ -348,9 +348,18 @@ function setNav() {
     const nav = document.getElementById('navBar');
     const pages = ['home','pricing','guide'];
     let html = pages.map(p => '<a href="#" class="nav-link" data-page="'+p+'">'+(p==='home'?'Home':p==='pricing'?'Pricing':'How To')+'</a>').join('');
-    if (currentUser) {
-        const uname = (userData && userData.username) ? userData.username : (currentUser.email ? currentUser.email.split('@')[0] : 'User');
-        html += '<a href="#" class="nav-link" data-page="dashboard"><span style="color:#a78bfa">&#9679;</span> '+uname+'</a>';
+    if (currentUser && userData) {
+        const uname = userData.username || currentUser.displayName || currentUser.email.split('@')[0];
+        const isAdmin = currentUser.email === ADMIN_EMAIL;
+        const exp = userData.subscriptionExpiry ? new Date(userData.subscriptionExpiry.seconds*1000) : null;
+        const active = isAdmin || (userData.hasPurchased && exp && new Date() < exp);
+        const days = exp ? Math.max(0, Math.floor((exp-new Date())/(1000*60*60*24))) : 0;
+        let badge = '';
+        if (isAdmin) badge = ' <span style="color:#a78bfa;font-size:11px">[Admin]</span>';
+        else if (active) badge = ' <span style="color:#4ade80;font-size:11px">['+days+'d]</span>';
+        else if (userData.freeTrialUsed) badge = ' <span style="color:#f87171;font-size:11px">[Inactive]</span>';
+        else badge = ' <span style="color:#fbbf24;font-size:11px">[Trial]</span>';
+        html += '<a href="#" class="nav-link" data-page="dashboard"><span style="color:#a78bfa">&#9679;</span> '+uname+badge+'</a>';
         html += '<a href="#" id="logoutBtnNav" style="background:linear-gradient(135deg,#a78bfa,#8b5cf6);color:white;padding:8px 16px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none;transition:all .3s;box-shadow:0 4px 20px rgba(167,139,250,0.4)">Logout</a>';
     } else {
         html += '<a href="#" class="nav-link" data-page="login">Login</a>';
@@ -419,7 +428,17 @@ document.getElementById('switchToLogin')?.addEventListener('click', e => { e.pre
 function renderHome() {
     const c = document.getElementById('homeContent');
     if (currentUser && userData) {
-        c.innerHTML = '<div class="features">' +
+        const isAdmin = currentUser.email === ADMIN_EMAIL;
+        const exp = userData.subscriptionExpiry ? new Date(userData.subscriptionExpiry.seconds*1000) : null;
+        const active = isAdmin || (userData.hasPurchased && exp && new Date() < exp);
+        let banner = '';
+        if (!isAdmin && !active) {
+            if (!userData.freeTrialUsed) {
+                banner = '<div style="display:flex;align-items:center;gap:12px;padding:14px 20px;border-radius:12px;font-size:14px;background:rgba(245,158,11,0.08);border:1px solid rgba(245,158,11,0.3);margin-bottom:20px"><span style="color:#fbbf24;font-size:18px">&#9888;</span><span style="color:#fbbf24">No active plan.</span> <a href="#" class="nav-link" data-page="pricing" style="color:#a78bfa;font-weight:600;text-decoration:underline">Buy a Plan</a></div>';
+            }
+        }
+        c.innerHTML = banner +
+            '<div class="features">' +
             '<div class="feature-card"><div style="flex:1"><h3>Desktop Web Browser</h3><p style="font-size:14px;color:#9ca3af">Upload via Google Chrome, Firefox, or Edge on your computer.</p></div></div>' +
             '<div class="feature-card"><div style="flex:1"><h3>Mobile App</h3><p style="font-size:14px;color:#9ca3af">Upload directly from the TikTok app or TikTok Studio app on your phone.</p></div></div>' +
             '</div>' +
@@ -623,7 +642,11 @@ function renderPricing() {
     if (!c) return;
     const isLogged = !!currentUser;
     const hasPurch = userData?.hasPurchased;
-    c.innerHTML = PLANS.map(p => {
+    let banner = '';
+    if (isLogged && !hasPurch) {
+        banner = '<div style="display:flex;align-items:center;gap:12px;padding:14px 20px;border-radius:12px;font-size:14px;background:rgba(34,197,94,0.08);border:1px solid rgba(34,197,94,0.3);margin-bottom:24px"><span style="color:#4ade80;font-size:18px">&#127881;</span><span style="color:#4ade80">First-time buyer discount &mdash; save up to 40%!</span></div>';
+    }
+    c.innerHTML = banner + PLANS.map(p => {
         const dp = isLogged && !hasPurch ? p.firstPrice : p.price;
         const disc = isLogged && !hasPurch && p.firstPrice !== p.price;
         return '<div class="feature-card" style="flex-direction:column;text-align:center;padding:32px'+(p.popular?';border-color:rgba(167,139,250,0.6)':'')+'">'+
@@ -670,7 +693,6 @@ function renderPricing() {
             } catch(e) { el.innerHTML = '<a href="https://www.paypal.com/ncp/payment/PLACEHOLDER_'+p.id+'" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#0070ba,#1546a0);color:white;padding:10px 20px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none">Buy with PayPal</a>'; }
         });
     }
-    document.querySelectorAll('#pricingPlans .nav-link[data-page="login"]').forEach(l => l.addEventListener('click', e => { e.preventDefault(); showModal('loginModal'); }));
 }
 
 // Initialize
